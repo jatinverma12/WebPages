@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<head>
+    <title>DEROBOTICA|JNU|SE</title>
+       <!-- <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"> -->
+
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,600;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src ="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"> </script>
+    <script src ="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"> </script>
+    <script src="js/main.js"></script>
+</head>
+<style type="text/css">
+    .redirect{
+        width: 100%;
+        padding: 1em 0;
+        margin: 0em 0;
+        font-weight: 800;
+        font-size: 2em;
+    }
+
+    .timer *{
+        font-size: 6em;
+        transition: 0.5s;
+    }
+    h1{
+        color: #fff;
+        font-size: 4em;
+    }
+    h2{
+        font-size: 4em;
+    }
+    h4{
+        font-size: 2em;
+        padding: 1em 2em;
+    }
+/*    @media(max-width: 768px){
+        h2{
+            font-size: 2em;
+        }
+    }*/
+</style>
+<body >
+    <nav class="navbar navbar-default " style="margin-bottom: 0rem;height:7.2rem;">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a href="#"class="navbar-brand" style="padding:0">
+                    <img src="images/logose.png" style="height:7rem;width:35rem;">
+                </a>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+
+
+                <ul class="nav navbar-nav navbar-right" style="margin-right: 10rem;">
+                    <li class="active "><a style="height: 7rem;"href="#">Home</a></li>
+                    <li >
+                        <a href="#events" style="height: >7rem;">Events</a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+
+
+    <div style="background-color:#1B374C;">
+        <h1 class="text-center p-2 mx-3 "> DEROBOTICA: ROBOTICS CLUB </h1>
+    </div>
+
+    <a class="redirect btn btn-danger w-100 " href="http://derobotica.rf.gd" target="_blank"> CLICK HERE TO VISIT NEW WEBSITE !!!</a>
+    <div class="px-2 mx-2">
+            <h4 class="px-5 text-center"> Derobotica CLUB manages their own website on a different server, please press above link or visit derobotica.rf.gd for full experience </h4>
+        <a class="px-2" href="http://derobotica.rf.gd" target="_blank">
+        </a>
+
+        <div class="frame-loader text-center">
+            <h2>TAKING YOU TO NEW WEBSITE AUTOMATICALLY IN :</h2>
+            <div class="timer text-center"><span></span></div>
+        </div>
+        <script type="text/javascript">
+            // REDIRECTOR TIMER
+            TimeLeft=10000;
+            relsize=1;
+            counter=setInterval(function () {
+                $('.timer span').text(TimeLeft/1000+" Seconds")
+                $('.timer span').css('font-size',relsize+'em')
+                TimeLeft-=1000;
+                relsize+=1;
+                if (TimeLeft<0) {
+                    window.open('http://derobotica.rf.gd',"_self")
+                    clearInterval(counter)
+                }
+            }, 1000)
+        </script>
+    </div>
+
+
+
+
+
+
+
+</body>
+
+</html>

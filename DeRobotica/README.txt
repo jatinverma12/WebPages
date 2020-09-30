@@ -1,0 +1,1 @@
+The page will auto redirect to the target site, just put these files as usual. in htdocs or the hosting folder. window location will change to derobotica.rf.gd (main club website) in ten seconds from page opening for smooth experience for visitor.
